@@ -20,7 +20,7 @@ import Title from './Title'
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#a8dadc',
+      main: '#ffb43c',
     },
     secondary: {
       main: '#f50057',
@@ -62,7 +62,7 @@ export default function MUIToDoList() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Paper elevation={3} sx={{ maxWidth: 400, mx: 'auto', p: 3 ,borderRadius: 3}}>
+      <Paper elevation={3} sx={{ maxWidth: 400, mx: 'auto', p: 3 ,borderRadius: 3,backgroundColor: '#edf2f4',backdropFilter: 'blur(20px)'}}>
         <Title />
         <Box component="form" onSubmit={handleSubmit} sx={{ mb: 2 }}>
           <TextField
